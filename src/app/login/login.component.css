@@ -1,0 +1,24 @@
+/*!* login.component.css *!*/
+
+/*!* Establecer el color de fondo para toda la pantalla *!*/
+/*body {*/
+/*  background-color: #F18809;*/
+/*}*/
+
+/*!* Estilo para el contenedor principal *!*/
+/*.container {*/
+/*  max-width: 600px;*/
+/*  background-color: white; !* Fondo blanco para el formulario *!*/
+/*}*/
+
+/*!* Estilo para centrar verticalmente el contenido *!*/
+/*.vh-100 {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+/*!* Estilo para la tarjeta *!*/
+/*.card {*/
+/*  border-radius: 10px;*/
+/*}*/

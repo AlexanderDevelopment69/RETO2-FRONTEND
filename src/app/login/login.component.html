@@ -1,1 +1,41 @@
-<p>login works!</p>
+<!-- login.component.html -->
+<div class="vh-100 d-flex align-items-center justify-content-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <img src="assets/images/tismart.jpg" alt="Logo" class="img-fluid h-100">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 border-0">
+
+          <div class="card-body p-4 p-lg-5 text-black">
+            <form (ngSubmit)="onSubmit(emailInput, passwordInput)" class="login-form" novalidate>
+              <h1>Iniciar sesión</h1>
+              <div class="mb-4">
+                <label class="form-label" for="exampleInputEmail1">Correo electrónico</label>
+                <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico" #emailInput required>
+                <div class="invalid-feedback">
+                  Por favor, introduzca un correo electrónico válido.
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="form-label" for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Contraseña" #passwordInput required>
+                <div class="invalid-feedback">
+                  Este campo es obligatorio.
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Bootstrap CSS via CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
